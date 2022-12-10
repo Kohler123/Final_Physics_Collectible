@@ -9,10 +9,15 @@ import Foundation
 import SpriteKit
 
 class CollectiblePokemon:SKSpriteNode{
+   // var pokeID = 0
+
+    
+    
     init(){
         // set default texture
         var picture = ""
         let randomInt = Int.random(in: 1..<151)
+        //self.pokeID = randomInt
         if (randomInt < 100 && randomInt > 9) {
             picture = "0" + String(randomInt)
         }
@@ -47,8 +52,11 @@ class CollectiblePokemon:SKSpriteNode{
     }
     
     func collected(){
-
         let removeFromParent = SKAction.removeFromParent()
         self.run(removeFromParent)
+    /*    var newData = APIData(PokemonID: pokeID)
+        var name = newData.pokemonName
+        print(newData.base_exp)
+        print(name) */
     }
 }

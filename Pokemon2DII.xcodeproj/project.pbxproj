@@ -19,9 +19,9 @@
 		3B608B66292C4FE1000917F0 /* HPComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B608B65292C4FE1000917F0 /* HPComponent.swift */; };
 		A44DD007294254C700709E72 /* SpriteKitHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A44DD006294254C700709E72 /* SpriteKitHelper.swift */; };
 		A44DD00B2942669C00709E72 /* CollectiblePokemon.swift in Sources */ = {isa = PBXBuildFile; fileRef = A44DD00A2942669C00709E72 /* CollectiblePokemon.swift */; };
+		A44DD03229440D7300709E72 /* PokemonData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A44DD03129440D7300709E72 /* PokemonData.swift */; };
+		A44DD03429440E4600709E72 /* APIData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A44DD03329440E4600709E72 /* APIData.swift */; };
 		A4C9AFD229390DD200D4CC0A /* Pokedex.sks in Resources */ = {isa = PBXBuildFile; fileRef = A4C9AFD129390DD200D4CC0A /* Pokedex.sks */; };
-		A4C9AFD62939104500D4CC0A /* PokemonData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4C9AFD52939104500D4CC0A /* PokemonData.swift */; };
-		A4C9AFD8293914F800D4CC0A /* APIData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4C9AFD7293914F800D4CC0A /* APIData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,9 +38,9 @@
 		3B608B65292C4FE1000917F0 /* HPComponent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HPComponent.swift; sourceTree = "<group>"; };
 		A44DD006294254C700709E72 /* SpriteKitHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpriteKitHelper.swift; sourceTree = "<group>"; };
 		A44DD00A2942669C00709E72 /* CollectiblePokemon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectiblePokemon.swift; sourceTree = "<group>"; };
+		A44DD03129440D7300709E72 /* PokemonData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PokemonData.swift; path = "../../../../../Downloads/FetchAPI 4/FetchAPI/PokemonData.swift"; sourceTree = "<group>"; };
+		A44DD03329440E4600709E72 /* APIData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = APIData.swift; path = "../../../../../Downloads/FetchAPI 4/FetchAPI/APIData.swift"; sourceTree = "<group>"; };
 		A4C9AFD129390DD200D4CC0A /* Pokedex.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Pokedex.sks; sourceTree = "<group>"; };
-		A4C9AFD52939104500D4CC0A /* PokemonData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PokemonData.swift; path = "../../../../../Downloads/FetchAPI 5/FetchAPI/PokemonData.swift"; sourceTree = "<group>"; };
-		A4C9AFD7293914F800D4CC0A /* APIData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = APIData.swift; path = "../../../../../Downloads/FetchAPI 3/FetchAPI/APIData.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,8 +86,8 @@
 				3B2D3269291BFD9C00E69676 /* LaunchScreen.storyboard */,
 				3B608B63292C4FDA000917F0 /* get_pokemon.wav */,
 				3B608B65292C4FE1000917F0 /* HPComponent.swift */,
-				A4C9AFD52939104500D4CC0A /* PokemonData.swift */,
-				A4C9AFD7293914F800D4CC0A /* APIData.swift */,
+				A44DD03129440D7300709E72 /* PokemonData.swift */,
+				A44DD03329440E4600709E72 /* APIData.swift */,
 			);
 			path = Pokemon2DII;
 			sourceTree = "<group>";
@@ -166,12 +166,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A4C9AFD62939104500D4CC0A /* PokemonData.swift in Sources */,
 				3B2D3272291C083500E69676 /* Player.swift in Sources */,
-				A4C9AFD8293914F800D4CC0A /* APIData.swift in Sources */,
 				A44DD007294254C700709E72 /* SpriteKitHelper.swift in Sources */,
 				3B2D3261291BFD9B00E69676 /* GameScene.swift in Sources */,
+				A44DD03429440E4600709E72 /* APIData.swift in Sources */,
 				3B608B66292C4FE1000917F0 /* HPComponent.swift in Sources */,
+				A44DD03229440D7300709E72 /* PokemonData.swift in Sources */,
 				3B2D3263291BFD9B00E69676 /* GameViewController.swift in Sources */,
 				3B2D325B291BFD9B00E69676 /* AppDelegate.swift in Sources */,
 				A44DD00B2942669C00709E72 /* CollectiblePokemon.swift in Sources */,
