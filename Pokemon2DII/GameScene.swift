@@ -14,6 +14,8 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     var graphs = [String : GKGraph]()
     let cam = SKCameraNode()
     var hud = SKNode()
+    public static var names = [String]()
+    public static var pics = [String]()
     
     
     private var lastUpdateTime : TimeInterval = 0
@@ -57,7 +59,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     func loadPokedex(){
         let scene = SKScene(fileNamed: "Pokedex")
         scene?.scaleMode = .aspectFill
-        
+
         var apiData:APIData = APIData(PokemonID: 1)
         apiData.fetchNew(PokemonID: 151)
         sleep(1)
@@ -66,16 +68,36 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         print(apiData.base_exp)
         print(apiData.capture_rate)
         
-        let name = apiData.pokemonName
+       // let name = apiData.pokemonName
+      /*  let name = GameScene.names
         let pokemonName = SKLabelNode(fontNamed: "Chalkduster")
-        pokemonName.text = name
+        let nameArray = GameScene.names.joined(separator: "    ")
+        pokemonName.text = nameArray
         pokemonName.fontSize = 65
         pokemonName.fontColor = SKColor.red
         pokemonName.position = CGPoint(x: frame.midX, y: frame.midY)
-        scene?.addChild(pokemonName)
+        scene?.addChild(pokemonName)*/
+        
+        for (i, pic) in (GameScene.pics).enumerated() {
+            let node = SKSpriteNode(imageNamed: pic)
+            let num = i * 200
+            let nameNode = SKLabelNode(fontNamed: "Chalkduster")
+    
+            node.position = CGPoint(x: frame.minX + CGFloat(num) + CGFloat(50), y: frame.midY)
+            scene?.addChild(node)
+            nameNode.text = GameScene.names[i]
+            scene?.addChild(nameNode)
+            nameNode.position = CGPoint(x: frame.minX + CGFloat(num) + CGFloat(50), y: frame.midY - CGFloat(150))
+        }
+
         
         
         self.view?.presentScene(scene)
+        
+       /* let transition = SKTransition.flipHorizontal(withDuration: 0.5)
+        let gameOver = Pokedex(size: self.size)
+        let skview = self.view!
+        skview.presentScene(gameOver, transition: transition) */
 
     }
     

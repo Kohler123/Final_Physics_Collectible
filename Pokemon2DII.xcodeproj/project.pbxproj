@@ -17,6 +17,8 @@
 		3B2D3272291C083500E69676 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B2D3271291C083500E69676 /* Player.swift */; };
 		3B608B64292C4FDA000917F0 /* get_pokemon.wav in Resources */ = {isa = PBXBuildFile; fileRef = 3B608B63292C4FDA000917F0 /* get_pokemon.wav */; };
 		3B608B66292C4FE1000917F0 /* HPComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B608B65292C4FE1000917F0 /* HPComponent.swift */; };
+		A402E3F6294557D200B30E0B /* Pokedex.swift in Sources */ = {isa = PBXBuildFile; fileRef = A402E3F5294557D200B30E0B /* Pokedex.swift */; };
+		A402E3F8294577D400B30E0B /* ScrollFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = A402E3F7294577D400B30E0B /* ScrollFeature.swift */; };
 		A44DD007294254C700709E72 /* SpriteKitHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A44DD006294254C700709E72 /* SpriteKitHelper.swift */; };
 		A44DD00B2942669C00709E72 /* CollectiblePokemon.swift in Sources */ = {isa = PBXBuildFile; fileRef = A44DD00A2942669C00709E72 /* CollectiblePokemon.swift */; };
 		A44DD03229440D7300709E72 /* PokemonData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A44DD03129440D7300709E72 /* PokemonData.swift */; };
@@ -36,6 +38,8 @@
 		3B2D3271291C083500E69676 /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 		3B608B63292C4FDA000917F0 /* get_pokemon.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = get_pokemon.wav; sourceTree = "<group>"; };
 		3B608B65292C4FE1000917F0 /* HPComponent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HPComponent.swift; sourceTree = "<group>"; };
+		A402E3F5294557D200B30E0B /* Pokedex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pokedex.swift; sourceTree = "<group>"; };
+		A402E3F7294577D400B30E0B /* ScrollFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollFeature.swift; sourceTree = "<group>"; };
 		A44DD006294254C700709E72 /* SpriteKitHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpriteKitHelper.swift; sourceTree = "<group>"; };
 		A44DD00A2942669C00709E72 /* CollectiblePokemon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectiblePokemon.swift; sourceTree = "<group>"; };
 		A44DD03129440D7300709E72 /* PokemonData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PokemonData.swift; path = "../../../../../Downloads/FetchAPI 4/FetchAPI/PokemonData.swift"; sourceTree = "<group>"; };
@@ -74,6 +78,7 @@
 			isa = PBXGroup;
 			children = (
 				A44DD006294254C700709E72 /* SpriteKitHelper.swift */,
+				A402E3F7294577D400B30E0B /* ScrollFeature.swift */,
 				A44DD00A2942669C00709E72 /* CollectiblePokemon.swift */,
 				3B2D3271291C083500E69676 /* Player.swift */,
 				3B2D325A291BFD9B00E69676 /* AppDelegate.swift */,
@@ -88,6 +93,7 @@
 				3B608B65292C4FE1000917F0 /* HPComponent.swift */,
 				A44DD03129440D7300709E72 /* PokemonData.swift */,
 				A44DD03329440E4600709E72 /* APIData.swift */,
+				A402E3F5294557D200B30E0B /* Pokedex.swift */,
 			);
 			path = Pokemon2DII;
 			sourceTree = "<group>";
@@ -168,12 +174,14 @@
 			files = (
 				3B2D3272291C083500E69676 /* Player.swift in Sources */,
 				A44DD007294254C700709E72 /* SpriteKitHelper.swift in Sources */,
+				A402E3F6294557D200B30E0B /* Pokedex.swift in Sources */,
 				3B2D3261291BFD9B00E69676 /* GameScene.swift in Sources */,
 				A44DD03429440E4600709E72 /* APIData.swift in Sources */,
 				3B608B66292C4FE1000917F0 /* HPComponent.swift in Sources */,
 				A44DD03229440D7300709E72 /* PokemonData.swift in Sources */,
 				3B2D3263291BFD9B00E69676 /* GameViewController.swift in Sources */,
 				3B2D325B291BFD9B00E69676 /* AppDelegate.swift in Sources */,
+				A402E3F8294577D400B30E0B /* ScrollFeature.swift in Sources */,
 				A44DD00B2942669C00709E72 /* CollectiblePokemon.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
