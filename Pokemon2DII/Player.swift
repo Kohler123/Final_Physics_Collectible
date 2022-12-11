@@ -31,8 +31,10 @@ class Player: SKSpriteNode{
                 self.texture? = SKTexture(imageNamed: "player_down")
                 self.physicsBody?.velocity = CGVector(dx:0, dy: -100)
             case .left:
+                self.texture? = SKTexture(imageNamed: "player_left")
                 self.physicsBody?.velocity = CGVector(dx:-100, dy: 0)
             case .right:
+                self.texture? = SKTexture(imageNamed: "player_right")
                 self.physicsBody?.velocity = CGVector(dx:100, dy: 0)
             case .stop:
                 stop()
