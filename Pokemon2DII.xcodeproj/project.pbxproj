@@ -19,6 +19,7 @@
 		3B608B66292C4FE1000917F0 /* HPComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B608B65292C4FE1000917F0 /* HPComponent.swift */; };
 		A402E3F6294557D200B30E0B /* Pokedex.swift in Sources */ = {isa = PBXBuildFile; fileRef = A402E3F5294557D200B30E0B /* Pokedex.swift */; };
 		A402E3F8294577D400B30E0B /* ScrollFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = A402E3F7294577D400B30E0B /* ScrollFeature.swift */; };
+		A402E3FA2946543D00B30E0B /* sinnesloschen-beam-117362.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A402E3F92946543D00B30E0B /* sinnesloschen-beam-117362.mp3 */; };
 		A44DD007294254C700709E72 /* SpriteKitHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A44DD006294254C700709E72 /* SpriteKitHelper.swift */; };
 		A44DD00B2942669C00709E72 /* CollectiblePokemon.swift in Sources */ = {isa = PBXBuildFile; fileRef = A44DD00A2942669C00709E72 /* CollectiblePokemon.swift */; };
 		A44DD03229440D7300709E72 /* PokemonData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A44DD03129440D7300709E72 /* PokemonData.swift */; };
@@ -40,6 +41,7 @@
 		3B608B65292C4FE1000917F0 /* HPComponent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HPComponent.swift; sourceTree = "<group>"; };
 		A402E3F5294557D200B30E0B /* Pokedex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pokedex.swift; sourceTree = "<group>"; };
 		A402E3F7294577D400B30E0B /* ScrollFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollFeature.swift; sourceTree = "<group>"; };
+		A402E3F92946543D00B30E0B /* sinnesloschen-beam-117362.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "sinnesloschen-beam-117362.mp3"; path = "../../../../../Downloads/sinnesloschen-beam-117362.mp3"; sourceTree = "<group>"; };
 		A44DD006294254C700709E72 /* SpriteKitHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpriteKitHelper.swift; sourceTree = "<group>"; };
 		A44DD00A2942669C00709E72 /* CollectiblePokemon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectiblePokemon.swift; sourceTree = "<group>"; };
 		A44DD03129440D7300709E72 /* PokemonData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PokemonData.swift; path = "../../../../../Downloads/FetchAPI 4/FetchAPI/PokemonData.swift"; sourceTree = "<group>"; };
@@ -94,6 +96,7 @@
 				A44DD03129440D7300709E72 /* PokemonData.swift */,
 				A44DD03329440E4600709E72 /* APIData.swift */,
 				A402E3F5294557D200B30E0B /* Pokedex.swift */,
+				A402E3F92946543D00B30E0B /* sinnesloschen-beam-117362.mp3 */,
 			);
 			path = Pokemon2DII;
 			sourceTree = "<group>";
@@ -156,6 +159,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A402E3FA2946543D00B30E0B /* sinnesloschen-beam-117362.mp3 in Resources */,
 				A4C9AFD229390DD200D4CC0A /* Pokedex.sks in Resources */,
 				3B2D3266291BFD9B00E69676 /* Main.storyboard in Resources */,
 				3B2D325D291BFD9B00E69676 /* GameScene.sks in Resources */,

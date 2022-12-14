@@ -9,7 +9,7 @@ import SpriteKit
 import GameplayKit
 
 class GameScene: SKScene, SKPhysicsContactDelegate {
-    
+    let music = SKAction.repeatForever(SKAction.playSoundFileNamed("sinnesloschen-beam-117362", waitForCompletion: true))
     var entities = [GKEntity]()
     var graphs = [String : GKGraph]()
     let cam = SKCameraNode()
@@ -27,9 +27,9 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     }
     
     override func didMove(to view: SKView) {
+        run(music)
         physicsWorld.contactDelegate = self
         player = childNode(withName: "player") as? Player
-        //player?.move(.stop)
         player?.setupConstrains()
         spawnMultiplePoke()
         self.camera = cam
@@ -68,16 +68,6 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         print(apiData.base_exp)
         print(apiData.capture_rate)
         
-       // let name = apiData.pokemonName
-      /*  let name = GameScene.names
-        let pokemonName = SKLabelNode(fontNamed: "Chalkduster")
-        let nameArray = GameScene.names.joined(separator: "    ")
-        pokemonName.text = nameArray
-        pokemonName.fontSize = 65
-        pokemonName.fontColor = SKColor.red
-        pokemonName.position = CGPoint(x: frame.midX, y: frame.midY)
-        scene?.addChild(pokemonName)*/
-        
         for (i, pic) in (GameScene.pics).enumerated() {
             let node = SKSpriteNode(imageNamed: pic)
             let num = i * 200
@@ -89,20 +79,10 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
             scene?.addChild(nameNode)
             nameNode.position = CGPoint(x: frame.minX + CGFloat(num) + CGFloat(50), y: frame.midY - CGFloat(150))
         }
-
-        
-        
         self.view?.presentScene(scene)
-        
-       /* let transition = SKTransition.flipHorizontal(withDuration: 0.5)
-        let gameOver = Pokedex(size: self.size)
-        let skview = self.view!
-        skview.presentScene(gameOver, transition: transition) */
-
     }
     
     func spawnPokemon(){
-       // let collectible = Collectible(collectibleType: CollectibleType.fruit)
         let poke = CollectiblePokemon()
         // set random position
         spawnPokemonEntity(node: poke)
@@ -118,7 +98,6 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     func spawnPokemonEntity(node: SKSpriteNode) {
         let area = calculateArea()
         let margin = 20.0
-        //CGRect(x: -1000, y: -1400, width: 1000, height: 1400)
         let randomX = CGFloat.random(in: area.minX+margin...area.maxX-margin)
         let randomY = CGFloat.random(in: area.minY+margin...area.maxY-margin)
         node.position = CGPoint(x: randomX, y: randomY)
