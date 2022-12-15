@@ -56,9 +56,11 @@ class CollectiblePokemon:SKSpriteNode{
         self.run(removeFromParent)
         var apiData:APIData = APIData(PokemonID: pokeID)
         apiData.fetchNew(PokemonID: pokeID)
-        sleep(1)
         
-        print(apiData.pokemonName)
+        let sound = SKAction.playSoundFileNamed("get_pokemon", waitForCompletion: false)
+        run(sound)
+        
+        sleep(1)
         GameScene.names.append(apiData.pokemonName)
         start += 1
         

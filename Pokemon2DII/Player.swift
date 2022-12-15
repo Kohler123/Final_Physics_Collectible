@@ -49,7 +49,7 @@ class Player: SKSpriteNode{
         let xRange = SKRange(lowerLimit: -480, upperLimit: 480)
         let yRange = SKRange(lowerLimit: -660, upperLimit: 680)
         let constraint = SKConstraint.positionX(xRange, y: yRange)
-        self.constraints = [constraint]
+        self.constraints = [constraint] 
     }
     
 }
